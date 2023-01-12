@@ -1,6 +1,4 @@
-*,
-:after,
-:before {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -14,6 +12,10 @@ a {
 }
 
 /* General style */
+
+.padding {
+  padding: 25px;
+}
 
 html,
 body {
@@ -61,14 +63,14 @@ h3 {
 }
 .col-left {
   width: 67%;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
 }
 .col-right {
   position: relative;
   width: 33%;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
 }
 
 section {
@@ -95,14 +97,8 @@ header {
   background-color: #d9d9d9;
 }
 
-.intro {
-  padding: 20px;
-}
-
 .intro-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-left: 20px;
 }
 
 .logo {
@@ -141,9 +137,10 @@ main {
   padding-top: 50px;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 700px) {
   .cv-container {
-    width: 90%;
+    width: 100%;
+    margin-top: 0;
     min-width: 350px;
   }
   .flex-2-collum {
@@ -151,18 +148,20 @@ main {
   }
   .col-left {
     width: 100%;
-    min-width: 350px;
   }
   .col-right {
     position: relative;
     width: 100%;
+  }
+  .intro-content {
+    padding-left: 0;
   }
   .logo {
     text-align: center;
   }
   .logo > img {
     width: 50%;
-    min-width: 300px;
+    min-width: 250px;
     transform: translateY(0px);
   }
   address {
@@ -173,8 +172,9 @@ main {
     margin: 20px 10px;
   }
 
-  section- {
-    width: fit-content;
+  .section-aside {
+    width: 250px;
+    /* text-align: center; */
     margin: auto;
   }
 
